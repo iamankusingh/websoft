@@ -41,22 +41,27 @@ export default function Header() {
       </button>
 
       <div
-        className={`w-full p-4 flex flex-col items-center gap-4 overflow-hidden fixed top-10 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out border rounded-md bg-card
+        className={`w-full p-4 flex flex-col items-center gap-4 overflow-hidden fixed top-10 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out border rounded-md bg-sidebar-accent
           lg:w-fit lg:p-0 lg:flex-row lg:static lg:translate-0 lg:h-fit lg:opacity-100 lg:max-h-none lg:overflow-visible lg:border-0 lg:bg-transparent z-50 ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
       >
-        <form className="flex gap-2">
+        <form className="flex gap-1 items-center">
           <Input
             type="text"
             name="rmn_vnc"
             placeholder="RMN / VC NO."
             id="search"
+            className="bg-white border-0 lg:h-8"
           />
-          <Input type="submit" value="Go" className="w-fit" />
+          <Input
+            type="submit"
+            value="Go"
+            className="w-fit bg-white border-0 lg:h-8"
+          />
         </form>
 
-        <nav className="flex flex-col items-center justify-center gap-4 text-xl lg:flex-row">
+        <nav className="flex flex-col items-center justify-center gap-4 text-xl lg:text-lg lg:flex-row">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/packs">Offerings</Link>
@@ -65,7 +70,7 @@ export default function Header() {
           <Link href="/contact">Contact us</Link>
         </nav>
 
-        <Button asChild>
+        <Button asChild className="text-black bg-white hover:bg-accent lg:h-8">
           <Link href="/login">Login</Link>
         </Button>
       </div>
