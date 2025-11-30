@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen text-center flex justify-center items-center">
+    <section className="min-h-screen text-center flex justify-center items-center bg-[url(/hero-bg.jpg)] bg-no-repeat bg-cover">
       {/* Text and CTA */}
       <div className="p-2 z-20">
         <h2 className="text-white text-4xl md:text-5xl font-semibold md:leading-15 cursor-default">
@@ -39,7 +39,7 @@ export default function Hero() {
       </div>
 
       {/* Floting logos */}
-      <div className="h-screen w-screen grid grid-cols-3 place-items-center absolute z-10">
+      <div className="h-screen w-full grid grid-cols-3 place-items-center absolute z-10">
         <div className="h-[100px] w-[100px] bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl -rotate-10 relative bottom-3">
           <Image src="/netflix.png" alt="Netflix" width={100} height={100} />
         </div>
