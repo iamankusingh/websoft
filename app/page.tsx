@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import QuickServices from "@/components/QuickServices";
 import Favourites from "@/components/Favoutites";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <QuickServices />
       <Favourites />
+      <Services />
     </main>
   );
 }

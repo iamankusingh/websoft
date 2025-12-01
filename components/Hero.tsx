@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen text-center flex justify-center items-center bg-[url(/hero-bg.jpg)] bg-no-repeat bg-cover">
+    <section className="min-h-screen text-center flex justify-center items-center bg-[url('/hero-bg.jpg')] bg-no-repeat bg-cover">
       {/* Text and CTA */}
       <div className="p-2 z-20">
         <h2 className="text-white text-4xl md:text-5xl font-semibold md:leading-15 cursor-default">
