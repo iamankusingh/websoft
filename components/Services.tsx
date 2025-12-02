@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section className="p-4 md:p-8 lg:p-16">
       <div className="w-full my-6 text-center">
-        <h3 className="text-4xl">MAJOR SERVICES</h3>
+        <h3 className="text-4xl">Major Services</h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
