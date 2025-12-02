@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="p-4 md:p-8 lg:p-16 flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16">
+    <section className="p-4 md:p-8 lg:px-16 flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16">
       <Image
         src="/company.png"
         alt="Company Art"

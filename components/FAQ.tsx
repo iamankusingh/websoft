@@ -39,7 +39,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="my-6 md:my-0 p-4 md:p-8 lg:p-16 flex flex-col">
+    <section className="my-6 md:my-0 p-4 md:p-8 lg:px-16 flex flex-col">
       <h3 className="text-2xl font-bold mb-8 text-gray-900">
         Frequently Asked Questions
       </h3>

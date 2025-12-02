@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="p-4 md:p-8 lg:p-16">
+    <section className="p-4 md:p-8 lg:px-16">
       <div className="w-full my-6 text-center">
         <h3 className="text-4xl">Major Services</h3>
       </div>

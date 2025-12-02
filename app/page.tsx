@@ -4,6 +4,7 @@ import Favourites from "@/components/Favoutites";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <About />
       <FAQ />
+      <Contact />
     </main>
   );
 }
