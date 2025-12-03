@@ -28,12 +28,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="p-4 md:p-8 lg:px-16 bg-[#141033] text-white cursor-default">
+    <footer className="p-4 md:p-8 lg:px-16 bg-[#141033] text-white">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-8 mb-10">
         <div className="md:col-span-4 flex flex-col items-start">
           <Link href="/" className="inline-block">
             <Image
-              src="/logo_Light.png"
+              src="/Logo_Light.png"
               alt="Websoft Solution Logo"
               width={150}
               height={50}
@@ -48,7 +48,7 @@ export default function Footer() {
               aria-label="WhatsApp"
               className="hover:bg-green-400 transition-colors rounded-md"
             >
-              <Image src="Whatsapp.svg" alt="whatsapp" width={50} height={50} />
+              <Image src="whatsapp.svg" alt="whatsapp" width={30} height={30} />
             </a>
 
             <a
@@ -59,8 +59,8 @@ export default function Footer() {
               <Image
                 src="instagram.svg"
                 alt="Instagram"
-                width={50}
-                height={50}
+                width={30}
+                height={30}
               />{" "}
             </a>
             <a
@@ -68,14 +68,14 @@ export default function Footer() {
               aria-label="Instagram"
               className="hover:bg-gray-800 transition-colors rounded-md"
             >
-              <Image src="x.svg" alt="x" width={50} height={50} />{" "}
+              <Image src="x.svg" alt="x" width={30} height={30} />{" "}
             </a>
             <a
               href="#"
               aria-label="X (formerly Twitter)"
               className="hover:bg-[#0866ff] transition-colors rounded-md"
             >
-              <Image src="facebook.svg" alt="Facebook" width={50} height={50} />{" "}
+              <Image src="facebook.svg" alt="Facebook" width={30} height={30} />{" "}
             </a>
           </div>
         </div>

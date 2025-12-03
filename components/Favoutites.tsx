@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Favourites() {
   return (
-    <section className="p-4 md:p-8 lg:p-16 flex flex-col md:flex-row gap-8 justify-around cursor-default">
+    <section className="p-8 lg:p-16 flex flex-col md:flex-row gap-8 justify-around">
       <div>
-        <h3 className="text-2xl md:text-3xl lg:text-5xl">
+        <h3 className="text-3xl lg:text-5xl">
           All your
           <span className="font-bold text-[#f56262]"> favourites </span>
           <Image
@@ -26,7 +26,7 @@ export default function Favourites() {
 
         <Button
           asChild
-          className="mr-3 text-black bg-white hover:bg-accent lg:h-8 shadow-lg"
+          className="mr-3 shadow-lg border border-gray-700 bg-gray-100 text-black hover:border-gray-400 hover:bg-black hover:text-white transition-all duration-300"
         >
           <Link href="/">View Plans</Link>
         </Button>

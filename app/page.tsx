@@ -5,11 +5,10 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#defcfe] overflow-hidden">
+    <main className="min-h-screen bg-[#FAF9F6] overflow-hidden cursor-default">
       <Hero />
       <QuickServices />
       <Favourites />
@@ -17,7 +16,6 @@ export default function Home() {
       <About />
       <FAQ />
       <Contact />
-      <Footer />
     </main>
   );
 }

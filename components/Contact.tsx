@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="my-6 md:my-0 p-4 md:p-8 lg:px-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 cursor-default">
+    <section className="my-6 md:my-0 p-8 lg:px-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
       {/* Address */}
       <div className="flex flex-col justify-center space-y-8">
         <h1 className="text-4xl font-medium tracking-tight text-black sm:text-5xl">
@@ -39,7 +39,7 @@ export default function Contact() {
       </div>
 
       {/* Form */}
-      <div className="p-4 lg:p-6 rounded-3xl bg-white shadow-sm">
+      <div className="p-4 lg:p-6 rounded-2xl bg-white shadow-sm">
         <h2 className="text-3xl font-bold tracking-tight text-black">
           Get in Touch
         </h2>
@@ -50,22 +50,22 @@ export default function Contact() {
             <input
               type="text"
               placeholder="First name"
-              className="w-full rounded-2xl border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
+              className="w-full rounded-lg border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
             />
             <input
               type="text"
               placeholder="Last name"
-              className="w-full rounded-2xl border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
+              className="w-full rounded-lg border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
             />
           </div>
 
           <input
             type="email"
             placeholder="Your email"
-            className="w-full rounded-2xl border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
+            className="w-full rounded-lg border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
           />
 
-          <div className="flex w-full overflow-hidden rounded-2xl border border-gray-400 focus-within:border-black">
+          <div className="flex w-full overflow-hidden rounded-lg border border-gray-400 focus-within:border-black">
             <div className="flex items-center border-r border-gray-400 bg-transparent px-5 py-3">
               <span className="font-medium text-gray-900">+91</span>
             </div>
@@ -79,7 +79,7 @@ export default function Contact() {
           <textarea
             rows={4}
             placeholder="How can we help you?"
-            className="w-full rounded-2xl border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none resize-none"
+            className="w-full rounded-lg border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none resize-none"
           />
 
           <div className="flex flex-col items-center justify-between gap-4 pt-2 sm:flex-row">
@@ -97,7 +97,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="rounded-2xl border border-black bg-white px-10 py-2.5 text-lg font-medium text-black transition-colors hover:bg-black hover:text-white"
+              className="px-10 py-2.5 text-lg font-medium rounded-lg border border-gray-400 bg-gray-100 text-black hover:border-white hover:bg-black hover:text-white transition-all duration-300"
             >
               Send
             </button>
