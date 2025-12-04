@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { Plus } from "lucide-react";
 import Image from "next/image";
 
@@ -62,15 +62,15 @@ export default function Hero() {
           />
         </div>
 
-        <div className="h-[100px] w-[100px] bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl rotate-10 relative top-5 left-4">
+        <div className="h-[100px] w-[100px] bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl rotate-10 relative top-10 left-4">
           <Image src="/prime.png" alt="Prime" width={100} height={100} />
         </div>
 
-        <div className="h-[100px] w-[100px] p-2 bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl flex items-center -rotate-10 relative top-12">
+        <div className="h-[100px] w-[100px] p-2 bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl flex items-center -rotate-10 relative top-16">
           <Image src="/apple-tv.png" alt="Apple TV" width={100} height={100} />
         </div>
 
-        <div className="h-[100px] w-[100px] p-1 bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl rotate-10 relative top-5 right-6">
+        <div className="h-[100px] w-[100px] p-1 bg-linear-to-br from-[#726d88] to-[#3c3754] rounded-2xl rotate-10 relative top-10 right-6">
           <Image src="/z5.png" alt="Z5" width={100} height={100} />
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="p-4 md:p-8 lg:px-16 bg-[#141033] text-white">
+    <footer className="p-8 lg:px-16 bg-[#141033] text-white">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-8 mb-10">
         <div className="md:col-span-4 flex flex-col items-start">
           <Link href="/" className="inline-block">

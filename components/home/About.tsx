@@ -23,19 +23,19 @@ export default function About() {
 
         <div>
           <p className="flex items-center gap-2">
-            <span className="h-5 w-5 bg-[#2e073f] rounded-full" />
+            <span className="h-2 w-2 bg-[#2e073f] rounded-full" />
             Customer Satisfaction
           </p>
           <p className="flex items-center gap-2">
-            <span className="h-5 w-5 bg-[#2e073f] rounded-full" />
+            <span className="h-2 w-2 bg-[#2e073f] rounded-full" />
             Quick Support Service
           </p>
           <p className="flex items-center gap-2">
-            <span className="h-5 w-5 bg-[#2e073f] rounded-full" />
+            <span className="h-2 w-2 bg-[#2e073f] rounded-full" />
             Best Oriented Company
           </p>
           <p className="flex items-center gap-2">
-            <span className="h-5 w-5 bg-[#2e073f] rounded-full" />
+            <span className="h-2 w-2 bg-[#2e073f] rounded-full" />
             More Skilled Employee
           </p>
         </div>

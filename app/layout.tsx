@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Popins from "next/font/local";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 // main fonts
 const popins = Popins({
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className={`${popins.className}  antialiased`}>
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

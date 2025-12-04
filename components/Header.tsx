@@ -14,36 +14,36 @@ export default function Header() {
   };
 
   return (
-    <header className="h-10 w-full px-2 flex items-center justify-between shadow-md fixed left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-card/70">
+    <header className="h-14 w-full px-8 lg:px-16 flex items-center justify-between shadow-md fixed left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-card/70">
       <Link href="/">
-        <Image src="/Logo_Dark.png" alt="Logo" width={50} height={40} />
+        <Image src="/Logo_Dark.png" alt="Logo" width={75} height={75} />
       </Link>
 
       {/* Hamburger button */}
       <button
         onClick={toggleMenu}
-        className="lg:hidden w-10 h-10 flex flex-col items-center justify-center space-y-1.5 focus:outline-none"
+        className="lg:hidden w-fit h-14 flex flex-col items-center justify-center space-y-1.5 focus:outline-none"
         aria-label="Menu"
       >
         <div
-          className={`w-6 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+          className={`w-7 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
             isOpen ? "rotate-45 translate-y-2" : ""
           }`}
         />
         <div
-          className={`w-6 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+          className={`w-7 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
             isOpen ? "opacity-0" : ""
           }`}
         />
         <div
-          className={`w-6 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
+          className={`w-7 h-0.5 bg-gray-800 transition-all duration-300 ease-in-out ${
             isOpen ? "-rotate-45 -translate-y-2" : ""
           }`}
         />
       </button>
 
       <div
-        className={`w-full p-4 flex flex-col items-center gap-4 overflow-hidden fixed top-10 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out border bg-sidebar-accent
+        className={`w-full p-4 flex flex-col items-center gap-4 overflow-hidden fixed top-14 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out border bg-sidebar-accent
           lg:w-fit lg:p-0 lg:flex-row lg:static lg:translate-0 lg:h-fit lg:opacity-100 lg:max-h-none lg:overflow-visible lg:border-0 lg:bg-transparent z-50 ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
@@ -79,6 +79,18 @@ export default function Header() {
           <Link href="/login">Login</Link>
         </Button>
       </div>
+
+      {/* overlay bg */}
+      {/* while rendering this div on isOpen true, it cause animation fps drop issue in physical phone */}
+      {/* while rendering always on screen with h-dvh opacity-0, it caause page scroll fps drop issue in physical device */}
+      {/* on display hide and block on basis of isOpen, it cause fps drop in opening menu in physical mobile */}
+      <div
+        className={`lg:hidden h-dvh w-full fixed top-14 left-0 bg-black/60 transition-all duration-300 z-40 ${
+          isOpen ? "block" : "hidden"
+        }`}
+        onClick={() => setIsOpen(false)}
+        onTouchStart={() => setIsOpen(false)}
+      ></div>
     </header>
   );
 }

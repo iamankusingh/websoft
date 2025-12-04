@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export default function QuickServices() {
+export default function QuickActions() {
   return (
     <section className="h-fit w-full p-10 bg-white grid grid-cols-3 md:grid-cols-6 place-items-center gap-6 text-center text-sm">
       <Link href="/">
