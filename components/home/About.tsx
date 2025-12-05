@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="p-8 lg:px-16 flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16">
       <Image
-        src="/company.png"
+        src="/company.webp"
         alt="Company Art"
         width={400}
         height={400}
@@ -14,11 +14,11 @@ export default function About() {
       <div>
         <h3 className="text-3xl font-bold">About Us</h3>
         <p className="my-5">
-          Websoft - Bhuj based OTT and cable service provider, your premier destination for cable and OTT
-          services that redefine entertainment. With a commitment to delivering
-          a seamless viewing experience, we offer an extensive library of
-          channels, shows, and movies tailored to fit every taste and
-          preference.
+          Websoft - Bhuj based OTT and cable service provider, your premier
+          destination for cable and OTT services that redefine entertainment.
+          With a commitment to delivering a seamless viewing experience, we
+          offer an extensive library of channels, shows, and movies tailored to
+          fit every taste and preference.
         </p>
 
         <div>
