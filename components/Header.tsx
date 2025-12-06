@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="h-14 w-full px-8 lg:px-16 flex items-center justify-between shadow-md fixed left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-card/70">
+    <header className="h-14 w-full px-8 lg:px-16 flex items-center justify-between shadow-md fixed top-0 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-card/70">
       <Link href="/">
         <Image src="/Logo_Dark.png" alt="Logo" width={75} height={75} />
       </Link>
@@ -47,6 +47,12 @@ export default function Header() {
           lg:w-fit lg:p-0 lg:flex-row lg:static lg:translate-0 lg:h-fit lg:opacity-100 lg:max-h-none lg:overflow-visible lg:border-0 lg:bg-transparent z-50 ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
+        onClick={(e) => {
+          if (e.target instanceof HTMLElement && e.target.tagName === "A") {
+            setIsOpen(false);
+          }
+          console.log(e);
+        }}
       >
         <form className="flex gap-1 items-center">
           <Input

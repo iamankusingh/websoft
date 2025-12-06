@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <main className="h-screen px-10 lg:px-16 flex flex-col items-center gap-4 bg-[url('/login-bg.jpg')] bg-cover cursor-default">
+    <main className="h-screen px-8 lg:px-16 flex flex-col items-center gap-4 bg-[url('/login-bg.jpg')] bg-cover cursor-default">
       <h2 className="text-2xl mt-20">Websoft Accounts</h2>
 
       <section className="w-full md:w-sm p-4 bg-[#e8f1f9] rounded-xl">

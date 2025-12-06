@@ -43,7 +43,7 @@ export default function About() {
         </div>
 
         <Button asChild variant="secondary" className="mt-4">
-          <Link href="/">View More</Link>
+          <Link href="/about">View More</Link>
         </Button>
       </div>
     </section>
