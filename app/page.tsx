@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FAF9F6] overflow-hidden cursor-default">
+    <main className="min-h-screen overflow-hidden cursor-default">
       <Hero />
       <QuickActions />
       <Favourites />

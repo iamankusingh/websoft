@@ -54,13 +54,8 @@ export default function Header() {
             name="rmn_vnc"
             placeholder="RMN / VC NO."
             id="search"
-            className="bg-white border border-gray-300 lg:h-8"
           />
-          <Input
-            type="submit"
-            value="Go"
-            className="w-fit bg-white border border-gray-300 lg:h-8"
-          />
+          <Input type="submit" value="Go" className="w-fit" />
         </form>
 
         <nav className="flex flex-col items-center justify-center gap-4 text-xl lg:text-lg lg:flex-row">
@@ -72,10 +67,7 @@ export default function Header() {
           <Link href="/contact">Contact us</Link>
         </nav>
 
-        <Button
-          asChild
-          className="text-black bg-white hover:bg-gray-200 border border-gray-300 lg:h-8"
-        >
+        <Button asChild variant="outline">
           <Link href="/login">Login</Link>
         </Button>
       </div>

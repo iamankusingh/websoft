@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -39,6 +41,10 @@ export default function About() {
             More Skilled Employee
           </p>
         </div>
+
+        <Button asChild variant="secondary" className="mt-4">
+          <Link href="/">View More</Link>
+        </Button>
       </div>
     </section>
   );

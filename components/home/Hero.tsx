@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Image from "next/image";
 
@@ -20,17 +20,11 @@ export default function Hero() {
         </p>
 
         <div>
-          <Button
-            asChild
-            className="mr-3 p-5 lg:h-8 border border-gray-700 bg-gray-100 text-black hover:border-gray-400 hover:bg-black hover:text-white transition-all duration-300"
-          >
+          <Button asChild variant="default" className="mr-3">
             <Link href="/">View Plans</Link>
           </Button>
 
-          <Button
-            asChild
-            className="p-5 lg:h-8 border border-gray-400 bg-black text-white hover:border-gray-100 hover:bg-white hover:text-black transition-all duration-300"
-          >
+          <Button asChild variant="outline">
             <Link href="/">
               New Connection <Plus />
             </Link>

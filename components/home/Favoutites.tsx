@@ -24,10 +24,7 @@ export default function Favourites() {
           platforms at one place.
         </p>
 
-        <Button
-          asChild
-          className="mr-3 shadow-lg border border-gray-700 bg-gray-100 text-black hover:border-gray-400 hover:bg-black hover:text-white transition-all duration-300"
-        >
+        <Button asChild variant="secondary" className="mr-3">
           <Link href="/">View Plans</Link>
         </Button>
       </div>
