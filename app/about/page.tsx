@@ -38,6 +38,18 @@ export default function About() {
           nesciunt, autem eveniet pariatur minima accusantium porro enim. Maxime
           voluptate praesentium odio quo.
         </p>
+
+        <section className="pt-4 flex gap-2 jcontent-center">
+          <div className="w-fit p-4 bg-card rounded-lg border border-border">
+            <h2 className="text-xl font-semibold mb-4">Total Projects</h2>
+            <p>500+</p>
+          </div>
+
+          <div className="w-fit p-4 bg-card rounded-lg border border-border">
+            <h2 className="text-xl font-semibold mb-4">Total Clients</h2>
+            <p>50+</p>
+          </div>
+        </section>
       </main>
 
       <Footer />

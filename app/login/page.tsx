@@ -12,13 +12,13 @@ export default function Login() {
           <TabsList className="mb-4 p-2 rounded-xl bg-white">
             <TabsTrigger
               value="signin"
-              className="p-3 rounded-lg data-[state=active]:bg-popover"
+              className="p-3 rounded-lg data-[state=active]:bg-accent"
             >
               Sign In
             </TabsTrigger>
             <TabsTrigger
               value="signup"
-              className="p-3 rounded-lg data-[state=active]:bg-popover"
+              className="p-3 rounded-lg data-[state=active]:bg-accent"
             >
               Sign Up
             </TabsTrigger>
@@ -57,7 +57,7 @@ export default function Login() {
             </div>
 
             <div className="flex items-center justify-around">
-              <Link href="/" className="px-6 py-2 bg-popover rounded-md">
+              <Link href="/" className="px-6 py-2 bg-card rounded-md">
                 <Image
                   src="/google.webp"
                   alt="Google Icon"
@@ -66,7 +66,7 @@ export default function Login() {
                 />
               </Link>
 
-              <Link href="/" className="px-6 py-2 bg-popover rounded-md">
+              <Link href="/" className="px-6 py-2 bg-card rounded-md">
                 <Image
                   src="/apple.webp"
                   alt="Apple Icon"
@@ -116,7 +116,7 @@ export default function Login() {
             </div>
 
             <div className="flex items-center justify-around">
-              <Link href="/" className="px-6 py-2 bg-popover rounded-md">
+              <Link href="/" className="px-6 py-2 bg-card rounded-md">
                 <Image
                   src="/google.webp"
                   alt="Google Icon"
@@ -125,7 +125,7 @@ export default function Login() {
                 />
               </Link>
 
-              <Link href="/" className="px-6 py-2 bg-popover rounded-md">
+              <Link href="/" className="px-6 py-2 bg-card rounded-md">
                 <Image
                   src="/apple.webp"
                   alt="Apple Icon"
