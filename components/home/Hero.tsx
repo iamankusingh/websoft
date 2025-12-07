@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="min-h-screen text-center flex justify-center items-center bg-[url('/hero-bg.jpg')] bg-no-repeat bg-cover">
       {/* Text and CTA */}
       <div className="p-10 z-20">
-        <h2 className="text-white text-5xl md:text-5xl font-semibold md:leading-15">
+        <h2 className="text-white text-5xl md:text-5xl font-bold md:leading-15">
           Unlimited Entertainment.
           <br />
           One Simple Subscription.
@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div>
           <Button asChild variant="default" className="mr-3">
-            <Link href="/">View Plans</Link>
+            <Link href="/plans">View Plans</Link>
           </Button>
 
           <Button asChild variant="outline">

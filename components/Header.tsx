@@ -67,9 +67,9 @@ export default function Header() {
         <nav className="flex flex-col items-center justify-center gap-4 text-xl lg:text-lg lg:flex-row">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/packs">Offerings</Link>
-          <Link href="/plans">Products</Link>
-          <Link href="/services">Services</Link>
+          <Link href="/">Internet</Link>
+          <Link href="/">TV</Link>
+          <Link href="/plans">OTT</Link>
           <Link href="/contact">Contact us</Link>
         </nav>
 

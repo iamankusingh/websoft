@@ -37,7 +37,7 @@ export default function Services() {
           <Film className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />
           <h4 className="text-xl z-10">OTT Packs</h4>
           <Button asChild variant="link">
-            <Link href="/">
+            <Link href="/plans">
               Explore more <MoveRight className="inline" />
             </Link>
           </Button>
