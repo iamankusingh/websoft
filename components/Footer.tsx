@@ -9,7 +9,7 @@ type FooterLinkInfo = {
 const quickLinks: FooterLinkInfo[] = [
   { title: "Home", href: "/" },
   { title: "About us", href: "/about" },
-  { title: "Internet", href: "/" },
+  { title: "Internet", href: "/internet" },
   { title: "TV", href: "/" },
   { title: "OTT", href: "/plans" },
   { title: "Contact us", href: "/contact" },

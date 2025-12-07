@@ -15,7 +15,7 @@ export default function Services() {
           <Wifi className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />
           <h4 className="text-xl z-10">WiFi Broadband</h4>
           <Button asChild variant="link">
-            <Link href="/">
+            <Link href="/internet">
               Explore more <MoveRight className="inline" />
             </Link>
           </Button>
