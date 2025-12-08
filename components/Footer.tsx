@@ -10,18 +10,18 @@ const quickLinks: FooterLinkInfo[] = [
   { title: "Home", href: "/" },
   { title: "About us", href: "/about" },
   { title: "Internet", href: "/internet" },
-  { title: "TV", href: "/" },
+  { title: "TV", href: "/tv" },
   { title: "OTT", href: "/plans" },
   { title: "Contact us", href: "/contact" },
 ];
 
 const serviceLinks: FooterLinkInfo[] = [
-  { title: "Home Broadband", href: "/services/broadband" },
-  { title: "Corporate Internet", href: "/services/corporate" },
-  { title: "Pay Bills", href: "/pay-bills" },
-  { title: "FAQs", href: "/faqs" },
-  { title: "Terms & Conditions", href: "/terms" },
-  { title: "Privacy Policy", href: "/privacy" },
+  { title: "Home Broadband", href: "/internet" },
+  { title: "Corporate Internet", href: "/internet" },
+  { title: "Pay Bills", href: "/" },
+  { title: "FAQs", href: "/" },
+  { title: "Terms & Conditions", href: "/" },
+  { title: "Privacy Policy", href: "/" },
 ];
 
 export default function Footer() {

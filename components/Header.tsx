@@ -68,12 +68,12 @@ export default function Header() {
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/internet">Internet</Link>
-          <Link href="/">TV</Link>
+          <Link href="/tv">TV</Link>
           <Link href="/plans">OTT</Link>
           <Link href="/contact">Contact us</Link>
         </nav>
 
-        <Button asChild variant="outline">
+        <Button asChild variant="default">
           <Link href="/login">Login</Link>
         </Button>
       </div>

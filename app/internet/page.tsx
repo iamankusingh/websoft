@@ -171,7 +171,7 @@ export default function InternetPage() {
                   </li>
                 </ul>
 
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild variant="default" className="w-full">
                   <Link href="/">Subscribe</Link>
                 </Button>
               </article>
@@ -276,31 +276,26 @@ export default function InternetPage() {
                 step: 1,
                 title: "Choose Your Plan",
                 desc: "Select the internet plan that best suits your needs.",
-                icon: "CheckCircle2",
               },
               {
                 step: 2,
                 title: "Schedule Installation",
                 desc: "Contact our support team to set up a convenient installation time.",
-                icon: "Calendar",
               },
               {
                 step: 3,
                 title: "Professional Setup",
                 desc: "Our technicians will install equipment and configure your connection.",
-                icon: "Wrench",
               },
               {
                 step: 4,
                 title: "Testing & Activation",
                 desc: "We test the connection to ensure everything is working perfectly.",
-                icon: "Zap",
               },
               {
                 step: 5,
                 title: "Enjoy Your Internet",
                 desc: "Start browsing, streaming, and connecting with high-speed internet!",
-                icon: "Wifi",
               },
             ].map((item) => (
               <div

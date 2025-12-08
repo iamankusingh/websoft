@@ -26,7 +26,7 @@ export default function PlansBox({
         <p className="text-sm text-muted-foreground">{subtitle}</p>
       </div>
 
-      <div className="border-t border-border pt-4">
+      <div className="border-t border-border py-4">
         <h2 className="text-3xl font-bold text-foreground">
           ₹ {price}
           <span className="text-lg font-normal text-muted-foreground">
@@ -36,7 +36,7 @@ export default function PlansBox({
         </h2>
       </div>
 
-      <Button asChild variant="outline">
+      <Button asChild variant="default">
         <Link href={buttonHref}>{buttonText}</Link>
       </Button>
 

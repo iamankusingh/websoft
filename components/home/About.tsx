@@ -10,6 +10,7 @@ export default function About() {
         alt="Company Art"
         width={400}
         height={400}
+        loading="lazy"
         className="my-6 md:my-0 rounded-xl"
       />
 

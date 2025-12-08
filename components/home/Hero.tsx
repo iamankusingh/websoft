@@ -24,7 +24,7 @@ export default function Hero() {
             <Link href="/plans">View Plans</Link>
           </Button>
 
-          <Button asChild variant="outline">
+          <Button asChild variant="secondary">
             <Link href="/">
               New Connection <Plus />
             </Link>

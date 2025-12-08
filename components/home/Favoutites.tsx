@@ -14,7 +14,7 @@ export default function Favourites() {
             alt="star"
             width={40}
             height={40}
-            unoptimized
+            loading="lazy"
             className="inline hover:rotate-90 transition-all"
           />
           <br /> at one place.
