@@ -2,10 +2,17 @@ import PlansBox from "@/components/PlansBox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function PlansPage() {
   return (
     <>
+      <SEO
+        title="Ott Plans Websoft Solution"
+        description="Explore different ott plans tailored to your need at Websoft Sollution Bhuj"
+        // keywords={["keyword1", "keyword2"]}
+      />
+
       <main className="px-8 lg:px-16 pt-22 text-center cursor-default">
         <h2 className="text-3xl md:text-4xl font-bold">
           Explore world of movies and Tv shows

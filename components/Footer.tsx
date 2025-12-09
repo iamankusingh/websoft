@@ -9,17 +9,17 @@ type FooterLinkInfo = {
 const quickLinks: FooterLinkInfo[] = [
   { title: "Home", href: "/" },
   { title: "About us", href: "/about" },
-  { title: "Internet", href: "/internet" },
+  { title: "WiFi", href: "/wifi" },
   { title: "TV", href: "/tv" },
-  { title: "OTT", href: "/plans" },
+  { title: "OTT", href: "/ott" },
   { title: "Contact us", href: "/contact" },
 ];
 
 const serviceLinks: FooterLinkInfo[] = [
-  { title: "Home Broadband", href: "/internet" },
-  { title: "Corporate Internet", href: "/internet" },
+  { title: "Home Broadband", href: "/wifi" },
+  { title: "Corporate Internet", href: "/wifi/#corporate-internet" },
   { title: "Pay Bills", href: "/" },
-  { title: "FAQs", href: "/" },
+  { title: "Support", href: "/support" },
   { title: "Terms & Conditions", href: "/" },
   { title: "Privacy Policy", href: "/" },
 ];

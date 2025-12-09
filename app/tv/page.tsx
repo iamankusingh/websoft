@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -91,7 +92,13 @@ export default function TvPage() {
 
   return (
     <>
-      <main className="px-8 lg:px-16 pt-18">
+      <SEO
+        title="Tv Packs Websoft Solution"
+        description="Explore different TV packs at Websoft Sollution Bhuj"
+        // keywords={["keyword1", "keyword2"]}
+      />
+
+      <main className="px-8 lg:px-16 pt-18 cursor-default">
         <h2 className="text-3xl font-semibold mb-2">TV Channels</h2>
         <p className="text-muted-foreground mb-8">
           Explore variety of Regional, National and International TV Channels

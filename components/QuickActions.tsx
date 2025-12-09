@@ -11,17 +11,17 @@ import Link from "next/link";
 export default function QuickActions() {
   return (
     <section className="h-fit w-full p-10 bg-white grid grid-cols-3 md:grid-cols-6 place-items-center gap-6 text-center text-sm">
-      <Link href="/">
+      <Link href="/wifi">
         <Globe className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         Broadband
       </Link>
 
-      <Link href="/">
+      <Link href="/ott">
         <FilmIcon className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         OTT
       </Link>
 
-      <Link href="/">
+      <Link href="/support">
         <Headphones className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         27/7 Support
       </Link>

@@ -25,7 +25,7 @@ export default function Favourites() {
         </p>
 
         <Button asChild variant="secondary" className="mr-3">
-          <Link href="/plans">View Plans</Link>
+          <Link href="/ott">View Plans</Link>
         </Button>
       </div>
 

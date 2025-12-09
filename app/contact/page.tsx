@@ -1,9 +1,16 @@
 import Footer from "@/components/Footer";
 import Contact from "@/components/home/Contact";
+import SEO from "@/components/SEO";
 
 export default function ContactPage() {
   return (
     <>
+      <SEO
+        title="Contact us Websoft Solution"
+        description="Contatc us page of Websoft Sollution Bhuj"
+        // keywords={["keyword1", "keyword2"]}
+      />
+
       <main className="min-h-screen pt-14">
         <Contact />
 

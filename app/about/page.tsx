@@ -1,8 +1,15 @@
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function About() {
   return (
     <>
+      <SEO
+        title="About Websoft Solution"
+        description="About Websoft Sollution Bhuj"
+        // keywords={["keyword1", "keyword2"]}
+      />
+
       <main className="min-h-screen px-8 pt-18 pb-6 md:px-32 lg:px-60 flex flex-col gap-6">
         <h2 className="text-4xl font-semibold">About US</h2>
 

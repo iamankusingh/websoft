@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 import Link from "next/link";
@@ -101,6 +102,12 @@ const corporateInternet: CorporatePlanType[] = [
 export default function InternetPage() {
   return (
     <>
+      <SEO
+        title="Wifi Routers at Websoft Solution"
+        description="Get lightning fast internet service at Websoft Sollution Bhuj"
+        // keywords={["keyword1", "keyword2"]}
+      />
+
       <main className="px-8 lg:px-16 pt-16 cursor-default">
         <h1 className="text-4xl font-bold mb-4">Internet</h1>
         <p className="text-lg text-gray-600 mb-4">
@@ -180,7 +187,7 @@ export default function InternetPage() {
         </section>
 
         {/* Corporate Internet */}
-        <search className="py-8">
+        <section id="corporate-internet" className="py-8">
           <h2 className="text-3xl font-semibold">Corporate Internet</h2>
           <p className="mt-4 text-gray-700">
             For businesses seeking reliable and high-speed internet solutions,
@@ -216,7 +223,7 @@ export default function InternetPage() {
               </article>
             ))}
           </div>
-        </search>
+        </section>
 
         <section className="py-8">
           <h2 className="text-3xl font-semibold mb-2">Why Choose Us?</h2>

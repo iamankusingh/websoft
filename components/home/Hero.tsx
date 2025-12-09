@@ -21,12 +21,12 @@ export default function Hero() {
 
         <div>
           <Button asChild variant="default" className="mr-3">
-            <Link href="/plans">View Plans</Link>
+            <Link href="/ott">View OTT Plans</Link>
           </Button>
 
           <Button asChild variant="secondary">
-            <Link href="/">
-              New Connection <Plus />
+            <Link href="/wifi">
+              WiFi Connection <Plus />
             </Link>
           </Button>
         </div>
