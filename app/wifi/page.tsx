@@ -198,26 +198,21 @@ export default function InternetPage() {
             {corporateInternet.map((plan) => (
               <article
                 key={plan.speed}
-                className="border-2 border-blue-600 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow bg-blue-50"
+                className="border-2 border-primary rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow bg-card"
               >
-                <h3 className="text-2xl font-bold text-blue-600 mb-2">
-                  {plan.speed}
-                </h3>
+                <h3 className="text-2xl font-bold mb-2">{plan.speed}</h3>
                 <p className="text-3xl font-bold text-gray-900 mb-4">
                   {plan.price}
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2">
-                      <span className="text-blue-600 font-bold">✓</span>{" "}
+                      <span className="text-green-600 font-bold">✓</span>{" "}
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <Button
-                  asChild
-                  className="w-full mt-6 bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                >
+                <Button asChild className="w-full mt-4">
                   <Link href="/">Book</Link>
                 </Button>
               </article>
@@ -225,6 +220,7 @@ export default function InternetPage() {
           </div>
         </section>
 
+        {/* why choose us */}
         <section className="py-8">
           <h2 className="text-3xl font-semibold mb-2">Why Choose Us?</h2>
           <p className="text-muted-foreground mb-8">
@@ -270,6 +266,7 @@ export default function InternetPage() {
           </div>
         </section>
 
+        {/* installation process */}
         <section className="py-8">
           <h2 className="text-3xl font-semibold mb-2">Installation Process</h2>
           <p className="text-muted-foreground mb-8">
@@ -309,8 +306,8 @@ export default function InternetPage() {
                 key={item.step}
                 className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center"
               >
-                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-lg font-bold text-blue-600">
+                <div className="bg-muted w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-lg font-bold">
                     {item.step}
                   </span>
                 </div>

@@ -72,22 +72,20 @@ export default function TvPage() {
   const [customPrice, setCustomPrice] = useState<number>(0);
 
   const handleCheckBox = (genre: string) => {
-    console.log(genre);
-
-    // it genre exist, subtract
+    // if genre exist, remove
     if (customList.includes(genre)) {
       setCustomList(customList.filter((item) => item !== genre));
-      setCustomPrice(customPrice - 70);
+      setCustomPrice(customPrice - 50);
     } else {
-      console.log("Not in list");
+      // if not exixt, add
       setCustomList([...customList, genre]);
-      setCustomPrice(customPrice + 70);
+      setCustomPrice(customPrice + 50);
     }
   };
 
   useEffect(() => {
-    console.log("final array ", customList);
-    console.log("final price ", customPrice);
+    console.log("custom list ", customList);
+    console.log("custom price ", customPrice);
   }, [customList, customPrice]);
 
   return (
@@ -148,11 +146,12 @@ export default function TvPage() {
           ))}
         </section>
 
+        {/* custom packs */}
         <section className="py-4">
           <h2 className="text-3xl font-semibold mb-2">Custom Pack</h2>
           <p className="text-muted-foreground mb-8">Build your custom pack</p>
 
-          <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <article className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {[
               "News",
               "Movies",
@@ -181,7 +180,7 @@ export default function TvPage() {
             ].map((genre) => (
               <div
                 key={genre}
-                className="flex items-center justify-between p-2 bg-card rounded border border-border"
+                className="flex items-center justify-between p-2 bg-card rounded-md border border-border"
               >
                 {/* check box */}
                 <label
@@ -191,31 +190,32 @@ export default function TvPage() {
                   <input
                     type="checkbox"
                     className="w-4 h-4 rounded"
+                    checked={customList.includes(genre)}
                     onChange={() => handleCheckBox(genre)}
                   />
                   <span className="text-gray-700">{genre}</span>
                 </label>
-
-                {/* radio */}
-                <div className="flex gap-3">
-                  <label className="flex items-center gap-2 cursor-pointer">
-                    <input type="radio" name={genre} className="w-4 h-4" />
-                    <span className="text-sm">SD</span>
-                  </label>
-
-                  <label className="flex items-center gap-2 cursor-pointer">
-                    <input
-                      type="radio"
-                      name={genre}
-                      defaultChecked
-                      className="w-4 h-4"
-                    />
-                    <span className="text-sm">HD</span>
-                  </label>
-                </div>
               </div>
             ))}
           </article>
+
+          <div className="py-4 flex items-center gap-2">
+            <label htmlFor="sd">
+              <input type="radio" name="quality" id="sd" /> SD
+            </label>
+
+            <label htmlFor="hd">
+              <input type="radio" name="quality" id="hd" /> HD
+            </label>
+
+            <label htmlFor="2k">
+              <input type="radio" name="quality" id="2k" defaultChecked /> 2K
+            </label>
+
+            <label htmlFor="4k">
+              <input type="radio" name="quality" id="4k" /> 4K
+            </label>
+          </div>
 
           <div className="w-full text-center">
             <Button size="lg" className="w-full md:w-xs mt-4">
@@ -262,10 +262,8 @@ export default function TvPage() {
                 key={item.step}
                 className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center"
               >
-                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-lg font-bold text-blue-600">
-                    {item.step}
-                  </span>
+                <div className="bg-popover w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-lg font-bold">{item.step}</span>
                 </div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>

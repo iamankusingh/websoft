@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Contact() {
   return (
@@ -95,12 +96,7 @@ export default function Contact() {
               </Link>
             </p>
 
-            <button
-              type="submit"
-              className="px-10 py-2.5 text-lg font-medium rounded-lg border border-gray-400 bg-gray-100 text-black hover:border-white hover:bg-black hover:text-white transition-all duration-300"
-            >
-              Send
-            </button>
+            <Button type="submit" variant="default" size="lg">Send</Button>
           </div>
         </form>
       </div>

@@ -10,7 +10,7 @@ export default function PrivacyPage() {
         // keywords={["keyword1", "keyword2"]}
       />
 
-      <main className="px-8 lg:px-16 pt-16 pb-20">
+      <main className="px-8 lg:px-16 pt-16 pb-20 cursor-default">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-2">
             Privacy Policy
