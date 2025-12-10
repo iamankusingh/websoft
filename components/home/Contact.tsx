@@ -86,11 +86,11 @@ export default function Contact() {
             <p className="text-xs font-medium text-gray-900 text-center sm:text-left">
               By contacting us, you are agree to our{" "}
               <br className="hidden sm:block" />
-              <Link href="/" className="font-bold underline">
-                Terms of Services
+              <Link href="/terms-conditions" className="font-bold underline">
+                Terms & Conditions
               </Link>{" "}
               and{" "}
-              <Link href="/" className="font-bold underline">
+              <Link href="/privacy" className="font-bold underline">
                 Privacy Policy
               </Link>
             </p>
