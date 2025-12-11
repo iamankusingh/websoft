@@ -70,16 +70,73 @@ const packs: packType[] = [
 export default function TvPage() {
   const [customList, setCustomList] = useState<string[]>([]);
   const [customPrice, setCustomPrice] = useState<number>(0);
+  const [quality, setquality] = useState<string>("2k");
 
   const handleCheckBox = (genre: string) => {
     // if genre exist, remove
     if (customList.includes(genre)) {
       setCustomList(customList.filter((item) => item !== genre));
-      setCustomPrice(customPrice - 50);
+      switch (quality) {
+        case "sd":
+          setCustomPrice(customPrice - 50);
+          break;
+        case "hd":
+          setCustomPrice(customPrice - 70);
+          break;
+        case "2k":
+          setCustomPrice(customPrice - 100);
+          break;
+        case "4k":
+          setCustomPrice(customPrice - 150);
+          break;
+
+        default:
+          break;
+      }
     } else {
       // if not exixt, add
       setCustomList([...customList, genre]);
-      setCustomPrice(customPrice + 50);
+      switch (quality) {
+        case "sd":
+          setCustomPrice(customPrice + 50);
+          break;
+        case "hd":
+          setCustomPrice(customPrice + 70);
+          break;
+        case "2k":
+          setCustomPrice(customPrice + 100);
+          break;
+        case "4k":
+          setCustomPrice(customPrice + 150);
+          break;
+
+        default:
+          break;
+      }
+    }
+  };
+
+  const handleQuality = (quality: string) => {
+    switch (quality) {
+      case "sd":
+        setquality("sd");
+        setCustomPrice(50 * customList.length);
+        break;
+      case "hd":
+        setquality("hd");
+        setCustomPrice(70 * customList.length);
+        break;
+      case "2k":
+        setquality("2k");
+        setCustomPrice(100 * customList.length);
+        break;
+      case "4k":
+        setquality("4k");
+        setCustomPrice(150 * customList.length);
+        break;
+
+      default:
+        break;
     }
   };
 
@@ -200,19 +257,19 @@ export default function TvPage() {
           </article>
 
           <div className="py-4 flex items-center gap-2">
-            <label htmlFor="sd">
+            <label htmlFor="sd" onClick={() => handleQuality("sd")}>
               <input type="radio" name="quality" id="sd" /> SD
             </label>
 
-            <label htmlFor="hd">
+            <label htmlFor="hd" onClick={() => handleQuality("hd")}>
               <input type="radio" name="quality" id="hd" /> HD
             </label>
 
-            <label htmlFor="2k">
+            <label htmlFor="2k" onClick={() => handleQuality("2k")}>
               <input type="radio" name="quality" id="2k" defaultChecked /> 2K
             </label>
 
-            <label htmlFor="4k">
+            <label htmlFor="4k" onClick={() => handleQuality("4k")}>
               <input type="radio" name="quality" id="4k" /> 4K
             </label>
           </div>
