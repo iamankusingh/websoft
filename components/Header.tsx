@@ -5,9 +5,25 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+type NavLinkInfo = {
+  title: string;
+  href: string;
+};
+
+const quickLinks: NavLinkInfo[] = [
+  { title: "Home", href: "/" },
+  { title: "About us", href: "/about" },
+  { title: "WiFi", href: "/wifi" },
+  { title: "TV", href: "/tv" },
+  { title: "OTT", href: "/ott" },
+  { title: "Contact us", href: "/contact" },
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -51,7 +67,6 @@ export default function Header() {
           if (e.target instanceof HTMLElement && e.target.tagName === "A") {
             setIsOpen(false);
           }
-          console.log(e);
         }}
       >
         <form className="flex gap-1 items-center">
@@ -64,13 +79,19 @@ export default function Header() {
           <Input type="submit" value="Go" className="w-fit" />
         </form>
 
-        <nav className="flex flex-col items-center justify-center gap-4 text-xl lg:text-lg lg:flex-row">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/wifi">WiFi</Link>
-          <Link href="/tv">TV</Link>
-          <Link href="/ott">OTT</Link>
-          <Link href="/contact">Contact us</Link>
+        <nav>
+          <ul className="flex flex-col items-center justify-center gap-4 text-xl lg:text-lg md:flex-row">
+            {quickLinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.href} className="hover:text-foreground/80">
+                  {link.title}
+                </Link>
+                {pathname === link.href && (
+                  <div className="h-0.5 w-full bg-primary"></div>
+                )}
+              </li>
+            ))}
+          </ul>
         </nav>
 
         <Button asChild variant="default">
