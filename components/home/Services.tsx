@@ -10,19 +10,23 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="relative h-96 w-auto p-4 bg-[url(/wires.webp)] bg-cover bg-center rounded-lg flex flex-col justify-center gap-4 text-white">
-          <div className="absolute inset-0 bg-black/50 rounded-lg" />
+        <div className="relative h-96 w-auto p-4 overflow-hidden rounded-lg flex flex-col justify-center gap-4 text-white group">
+          <div className="absolute inset-0 bg-[url(/wires.webp)] bg-cover bg-center transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-black/50" />
+
           <Wifi className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />
-          <h4 className="text-xl z-10">WiFi Broadband</h4>
-          <Button asChild variant="link">
+          <h4 className="text-xl z-10 font-bold">WiFi Broadband</h4>
+          <Button asChild variant="link" className="z-10 w-fit">
             <Link href="/wifi">
-              Explore more <MoveRight className="inline" />
+              Explore more <MoveRight className="inline ml-2" />
             </Link>
           </Button>
         </div>
 
-        <div className="relative h-96 w-auto p-4 bg-[url(/tv.jpg)] bg-cover bg-center rounded-lg flex flex-col justify-center gap-4 text-white">
-          <div className="absolute inset-0 bg-black/50 rounded-lg" />
+        <div className="relative h-96 w-auto p-4 overflow-hidden rounded-lg flex flex-col justify-center gap-4 text-white group">
+          <div className="absolute inset-0 bg-[url(/TV.JPG)] bg-cover bg-center transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-black/50" />
+
           <Tv className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />
           <h4 className="text-xl z-10">TV Channels</h4>
           <Button asChild variant="link">
@@ -32,8 +36,10 @@ export default function Services() {
           </Button>
         </div>
 
-        <div className="relative h-96 w-auto p-4 bg-[url(/otts.webp)] bg-cover bg-center rounded-lg flex flex-col justify-center gap-4 text-white ">
-          <div className="absolute inset-0 bg-black/50 rounded-lg" />
+        <div className="relative h-96 w-auto p-4 overflow-hidden rounded-lg flex flex-col justify-center gap-4 text-white group">
+          <div className="absolute inset-0 bg-[url(/otts.webp)] bg-cover bg-center transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-black/50" />
+
           <Film className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />
           <h4 className="text-xl z-10">OTT Packs</h4>
           <Button asChild variant="link">

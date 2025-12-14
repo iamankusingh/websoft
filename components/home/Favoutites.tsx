@@ -1,8 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Favourites() {
+  useEffect(() => {
+    gsap.to(".flower-svg", {
+      rotate: 360,
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: ".flower-svg",
+        start: "top 70%",
+      },
+    });
+  }, []);
+
   return (
     <section className="p-8 lg:p-16 flex flex-col md:flex-row gap-8 justify-around">
       <div>
@@ -14,8 +32,7 @@ export default function Favourites() {
             alt="star"
             width={40}
             height={40}
-            loading="lazy"
-            className="inline hover:rotate-90 transition-all"
+            className="flower-svg inline hover:rotate-90 transition-all"
           />
           <br /> at one place.
         </h3>
