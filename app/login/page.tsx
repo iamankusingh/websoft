@@ -1,4 +1,5 @@
 import SEO from "@/components/SEO";
+import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ export default function Login() {
         description="Login or create account at Websoft Sollution Bhuj"
         // keywords={["keyword1", "keyword2"]}
       />
-      
+
       <main className="h-screen px-8 lg:px-16 flex flex-col items-center gap-4 bg-[url('/login-bg.jpg')] bg-cover cursor-default">
         <h2 className="text-2xl mt-20">Websoft Accounts</h2>
 
@@ -35,8 +36,8 @@ export default function Login() {
             <TabsContent value="signin" className="flex flex-col gap-4">
               <form className="flex flex-col gap-4">
                 <input
-                  type="text"
-                  placeholder="username or phone number"
+                  type="number"
+                  placeholder="Phone Number"
                   className="w-full rounded-lg bg-white border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
                 />
 
@@ -50,12 +51,9 @@ export default function Login() {
                   Forgot Password?
                 </Link>
 
-                <button
-                  type="submit"
-                  className="w-full px-10 py-2.5 text-lg font-medium rounded-lg border border-gray-400 bg-gray-100 text-black hover:border-white hover:bg-black hover:text-white transition-all duration-300"
-                >
-                  Login
-                </button>
+                <Button type="submit" variant="default">
+                  Sign In
+                </Button>
               </form>
 
               <div className="flex items-center justify-center gap-2">
@@ -89,13 +87,13 @@ export default function Login() {
               <form className="flex flex-col gap-4">
                 <input
                   type="tetx"
-                  placeholder="Full name"
+                  placeholder="Full Name"
                   className="w-full rounded-lg bg-white border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
                 />
 
                 <input
                   type="number"
-                  placeholder="Phone number"
+                  placeholder="Phone Number"
                   className="w-full rounded-lg bg-white border border-gray-400 px-5 py-3 text-gray-900 placeholder:text-gray-500 focus:border-black focus:outline-none"
                 />
 
@@ -109,12 +107,9 @@ export default function Login() {
                   </Link>
                 </p>
 
-                <button
-                  type="submit"
-                  className="w-full px-10 py-2.5 text-lg font-medium rounded-lg border border-gray-400 bg-gray-100 text-black hover:border-white hover:bg-black hover:text-white transition-all duration-300"
-                >
-                  SignUp
-                </button>
+                <Button type="submit" variant="default">
+                  Sign Up
+                </Button>
               </form>
 
               <div className="flex items-center justify-center gap-2">

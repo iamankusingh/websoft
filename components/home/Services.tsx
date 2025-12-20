@@ -24,7 +24,7 @@ export default function Services() {
         </div>
 
         <div className="relative h-96 w-auto p-4 overflow-hidden rounded-lg flex flex-col justify-center gap-4 text-white group">
-          <div className="absolute inset-0 bg-[url(/TV.JPG)] bg-cover bg-center transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-[url(/tv.jpg)] bg-cover bg-center transition-transform duration-300 group-hover:scale-110" />
           <div className="absolute inset-0 bg-black/50" />
 
           <Tv className="h-20 w-20 p-4 bg-blue-600 rounded-xl z-10" />

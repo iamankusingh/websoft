@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 type InternetPlansType = {
@@ -220,6 +221,45 @@ export default function InternetPage() {
           </div>
         </section>
 
+        {/* Routers */}
+        <section id="routers">
+          <h2 className="text-3xl font-semibold mb-2">Routers</h2>
+          <p className="text-muted-foreground mb-8">
+            All the routers offered by us are smart routers. They can fix issue
+            by itself and keep your connection smooth.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="p-2 border border-border rounded-lg bg-card text-center">
+              <Image
+                src="/router2.jpg"
+                alt="Router"
+                loading="lazy"
+                height={300}
+                width={300}
+                className="mx-auto rounded-lg"
+              />
+              <h5 className="text-xl font-semibold">WiFi 6</h5>
+              <p>Speed above 250mbps</p>
+              <p className="text-sm">Can handle more devides</p>
+            </div>
+
+            <div className="p-2 border border-border rounded-lg bg-card text-center">
+              <Image
+                src="/router1.jpg"
+                alt="Router"
+                loading="lazy"
+                height={300}
+                width={300}
+                className="mx-auto rounded-lg"
+              />
+              <h5 className="text-xl font-semibold">WiFi 5</h5>
+              <p>Speed below 250mbps</p>
+              <p className="text-sm">Can handle few devides</p>
+            </div>
+          </div>
+        </section>
+
         {/* why choose us */}
         <section className="py-8">
           <h2 className="text-3xl font-semibold mb-2">Why Choose Us?</h2>
@@ -267,7 +307,7 @@ export default function InternetPage() {
         </section>
 
         {/* installation process */}
-        <section className="py-8">
+        <section id="installation" className="py-8">
           <h2 className="text-3xl font-semibold mb-2">Installation Process</h2>
           <p className="text-muted-foreground mb-8">
             Follow these simple steps to get your internet service up and
@@ -307,9 +347,7 @@ export default function InternetPage() {
                 className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow text-center"
               >
                 <div className="bg-muted w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-lg font-bold">
-                    {item.step}
-                  </span>
+                  <span className="text-lg font-bold">{item.step}</span>
                 </div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>

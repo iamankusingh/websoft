@@ -50,17 +50,17 @@ export default function QuickActions() {
         27/7 Support
       </Link>
 
-      <Link href="/" className="quick-box">
+      <Link href="/wifi/#routers" className="quick-box">
         <Router className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         Routers
       </Link>
 
-      <Link href="/" className="quick-box">
+      <Link href="/wifi/#installation" className="quick-box">
         <Zap className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         Installation
       </Link>
 
-      <Link href="/" className="quick-box">
+      <Link href="/login" className="quick-box">
         <IndianRupee className="h-12 w-12 m-auto p-2 bg-popover rounded-md" />
         Recharge
       </Link>
